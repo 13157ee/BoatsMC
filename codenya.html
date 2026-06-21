@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wagon Boats MC</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0e1117;
+      color: #fff;
+      margin: 0;
+      padding: 30px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    header img {
+      width: 200px;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .info-board {
+      background-color: #1f232b;
+      padding: 20px;
+      border-radius: 12px;
+      width: 280px;
+      text-align: center;
+    }
+    .info-board h2 {
+      margin: 0;
+      font-size: 20px;
+      color: #4da6ff;
+    }
+    .info-board p {
+      font-size: 14px;
+      color: #ccc;
+      margin: 10px 0;
+    }
+    .ip-box {
+      background-color: #1f232b;
+      padding: 20px;
+      border-radius: 12px;
+      width: 320px;
+      text-align: left;
+    }
+    .ip-box strong { font-size: 16px; }
+    .ip-box div { margin-top: 5px; font-size: 14px; }
+    .java-only { color: #ff4d4d; }
+    .support { color: #4dff4d; }
+    .uptime { color: #ffd633; }
+    .copy-btn {
+      margin-top: 10px;
+      padding: 8px 15px;
+      background-color: #28a745;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .copy-btn:hover { background-color: #218838; }
+    .button {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #5865F2;
+      color: #fff;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+    .button:hover { background-color: #404EED; }
+    .contact {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 14px;
+    }
+    .contact a { color: #4da6ff; text-decoration: none; }
+    .contact a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="boat.png" alt="Logo Wagon Boats MC">
+    <h1>Website Ini Berisi Informasi Server</h1>
+  </header>
+
+  <div class="container">
+    <!-- Papan Informasi -->
+    <div class="info-board">
+      <h2> 🆕Papan Informasi</h2>
+      <p>Plugin baru clear lagg,DiscorSRV  vault  TAB  LuckPerms</p>
+      <a class="button" href="https://discord.gg/t4sQf7Xts6" target="_blank">🚀 Join Discord</a>
+    </div>
+
+    <!-- Detail Server -->
+    <div class="ip-box">
+      💻 IP Minecraft Server:<br>
+      <strong id="server-ip">wagon-boats.gl.joinmc.link</strong>
+
+      <div class="java-only">⚠️ Java Edition Only</div>
+      <div class="support">✅ Support Minecraft Ori & Cracked</div>
+      <div class="uptime">🕒 Online 24/7 (hanya saat hari libur)</div>
+      <div>🎮 Versi: Minecraft 1.20.4</div>
+      <div>🌍 Server: Indonesia</div>
+      <div>⚡ Fitur: Anti‑lag, proteksi, komunitas aktif</div>
+      <div>📊 Max 67 pemain online</div>
+      <div>🇮🇩 Fitur khusus: Optimasi koneksi untuk pemain Indonesia</div>
+
+      <button class="copy-btn" onclick="copyIP()">📋 Copy IP</button>
+    </div>
+  </div>
+
+  <div class="contact">
+    📧 Contact Email: <a href="mailto:dcstudio13157@gmail.com">dcstudio13157@gmail.com</a>
+  </div>
+
+  <script>
+    function copyIP() {
+      const ip = document.getElementById("server-ip").innerText;
+      navigator.clipboard.writeText(ip).then(() => {
+        alert("IP berhasil disalin: " + ip);
+      });
+    }
+  </script>
+</body>
+</html>
